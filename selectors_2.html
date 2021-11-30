@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECOND SELECTORS</title>
+    <style>
+        div p{/*div es la etiqueta padre y la etiqueta p es el hijo y coge a todos siempre que esten dentro del padre*/
+            color: lime;
+        }
+        article > div{
+            background-color: peru;
+        }
+
+        div + section {/*todas las etiquetas que se encuentren despues de div pero que sean section van ha ser afectadas*/
+            background: palevioletred;
+        }
+        aside p ~ section{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ejemplo de selectores descendientes -->
+
+    <div>
+        <div>
+            <p>platzi</p>
+            <div>
+                <p>es</p>
+            </div>
+        </div>
+        <p>hola</p>
+    </div>
+
+    <!--ejemplo de selectores por hijo directo-->
+
+    <article>
+        <div>caja 1</div>
+        <article>
+            <!--este es un ejemplo de selector adyacente -->
+            <div>caja 2</div>
+            <section>
+                hola
+            </section>
+            <div>sa</div>
+        </article>
+        <div>jeje</div>
+    </article>
+    <div>caja 3</div>
+    <section>jajaj</section>
+
+    <!--ejemplo de selectores de general de hermanos-->
+
+    <aside>
+        <p>hermano 1</p>
+        <section>
+            hermano general 1
+        </section>
+        <section>
+            hermano general 2
+        </section>
+    </aside>
+
+</body>
+</html>
