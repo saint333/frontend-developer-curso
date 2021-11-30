@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: salmon;
+        }
+        p::first-letter{
+            color: rgb(81, 155, 204);
+        }
+        p:hover{
+            color: skyblue;
+        }
+        div p:nth-child(2){
+            color: violet;
+        }
+        input::placeholder{
+            color:aqua;
+            background: rgb(158, 111, 111);
+        }
+    </style>
+</head>
+<body>
+    <p>platzi</p>
+    <div>
+        <p>es</p>
+        <p>master</p>
+        <p>increible</p>
+    </div>
+    <input type="text" placeholder="name">
+</body>
+</html>
